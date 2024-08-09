@@ -46,23 +46,50 @@ c.k. shukla
 s.n. dasgupta
 sumit chakrobarty
 ```
-
-
 cat < file2
 ## OUTPUT
-
+```
+anil aggarwal
+barun sengupta
+c.k. shukla
+lalit chowdury
+s.n. dasgupta
+```
 
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+```
+file1 file2 differ: char 1, line 1
+```
+
 comm file1 file2
  ## OUTPUT
-
+```
+        anil aggarwal
+        barun sengupta
+        c.k. shukla
+chanchal singhvi
+c.k. shukla
+        lalit chowdury
+                s.n. dasgupta
+sumit chakrobarty
+```
  
 diff file1 file2
 ## OUTPUT
-
+```
+--- file1
++++ file2
+@@ -1,4 +1,5 @@
+-chanchal singhvi
++anil aggarwal
++barun sengupta
+ c.k. shukla
++lalit chowdury
+ s.n. dasgupta
+-sumit chakrobarty
+```
 
 #Filters
 
@@ -85,18 +112,26 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
-
-
+```
+Hel
+Thi
+```
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
-
+```
+1001
+1002
+1003
+```
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+```
+Ram
+ tom
+ Joe
+```cat
 
 cat < newfile 
 ```
