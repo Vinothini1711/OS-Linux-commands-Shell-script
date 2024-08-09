@@ -28,7 +28,6 @@ chanchal singhvi
 c.k. shukla
 s.n. dasgupta
 sumit chakrobarty
-^d
 ```
 cat > file2
 ```
@@ -37,12 +36,16 @@ barun sengupta
 c.k. shukla
 lalit chowdury
 s.n. dasgupta
-^d
 ```
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
+```
+chanchal singhvi
+c.k. shukla
+s.n. dasgupta
+sumit chakrobarty
+```
 
 
 cat < file2
