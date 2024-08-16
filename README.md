@@ -106,7 +106,6 @@ cat > file22
 1001 | Ram | 10000 | HR
 1002 | tom |  5000 | Admin
 1003 | Joe |  7000 | Developer
-^d
 ```
 
 
@@ -131,45 +130,48 @@ cut -d "|" -f 2 file22
 Ram
  tom
  Joe
-```cat
-
+cat
+```
+cat > newfile 
+```
+Hello world
+hello world
+```
 cat < newfile 
 ```
 Hello world
 hello world
-^d
-````
-cat > newfile 
-Hello world
-hello world
- 
+```
 grep Hello newfile 
 ## OUTPUT
-
-
+```
+Hello world
+```
 
 grep hello newfile 
 ## OUTPUT
-
-
-
-
+```
+hello world
+```
 grep -v hello newfile 
 ## OUTPUT
-
+```
+Hello world
+```
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
-
-
+```
+Hello world
+hello world
+```
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
-
-
-
+```
+2
+```
 
 grep -R ubuntu /etc
 ## OUTPUT
