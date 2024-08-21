@@ -302,7 +302,6 @@ cat > file23
 1004 | Sit |  7000 | Dev
 1003 | Joe |  7000 | Developer
 1001 | Ram | 10000 | HR
-^d
 ```
 
 
@@ -530,7 +529,6 @@ cat < urllist.txt
 www. yahoo. com
 www. google. com
 www. mrcet.... com
-^d
  ```
 cat > urllist.txt
 ```
@@ -649,7 +647,6 @@ echo 'The $@ is ' $@
 echo 'The $\# is ' $1#
 echo 'The $$ is ' $$
 ps
-^d
  ```
 
 cat scriptest.sh 
@@ -789,7 +786,6 @@ fi
 else
 echo “Sorry, the object does not exist”
 fi
-^d
 ```
 cat ifnested.sh 
 ```
@@ -837,7 +833,6 @@ echo “The values are equal”
 else
 echo “The values are different”
 fi
-^d
 ```
 
 
@@ -883,7 +878,6 @@ fi
 else
 echo “Sorry, the object does not exist”
 fi
-^d
 ```
 
 cat ifnested.sh 
@@ -1107,7 +1101,8 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- ## OUTPUT
+## OUTPUT
+```
  word:I
 word:don't
 word:know
@@ -1116,7 +1111,8 @@ word:this'll
 word:work
 ```
 cat forin1.sh 
-```bash
+```
+bash
 #!/bin/bash
 # basic for command
 for test in Alabama Alaska Arizona Arkansas California Colorado
@@ -1303,8 +1299,8 @@ $ chmod 755 exread.sh
 $ ./exread.sh 
 ## OUTPUT
 ```
-Enter your name: vasanth
-Hello vasanth, welcome to my program.
+Enter your name: vino
+Hello vino, welcome to my program.
 ```
 
  cat exread1.sh
@@ -1318,8 +1314,8 @@ $ chmod 755 exread1.sh
 
 ## OUTPUT
 ```
-Enter your name: vasanth
-Hello vasanth, welcome to my program.
+Enter your name: vino
+Hello vino, welcome to my program.
 ```
 
 
